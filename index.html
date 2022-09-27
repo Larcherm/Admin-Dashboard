@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;900&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -90,13 +93,13 @@
                 <li><button class="header-btn">Share</button></li>
             </ul>
         </div>
-        <div class="user-content">
-            <div class="projects-container">
+        <div class="main-content">
+            <div class="projects">
                 <h3 class="content-title projects-title">Your projects</h3>
                 <div class="cards-container">
                     <div class="card">
                         <h3 class="card-title">Some project</h3>
-                        <p>This is my project. There are many like it but this one is mine.</p>
+                        <p class="description">This is my project. There are many like it but this one is mine.</p>
                         <ul class="card-list">
                             <li><img src="assets/dashboard-symbols/star.png" alt="favorite symbol"></li>
                             <li><img src="assets/dashboard-symbols/eye.png" alt="watch symbol"></li>
@@ -105,7 +108,7 @@
                     </div>
                     <div class="card">
                         <h3 class="card-title">Asteroid Collision</h3>
-                        <p>Basis for the planetary defense algorithm using satelites to alter asteroid collision
+                        <p class="description">Basis for the planetary defense algorithm using satelites to alter asteroid collision
                             courses.
                         </p>
                         <ul class="card-list">
@@ -116,7 +119,7 @@
                     </div>
                     <div class="card">
                         <h3 class="card-title">Translator</h3>
-                        <p>Vivamus varius justo non nulla dapibus iaculis. In gravida ligula at 
+                        <p class="description">Vivamus varius justo non nulla dapibus iaculis. In gravida ligula at 
                             purus laoreet molestie. Morbi fringilla lobortis ipsum vitae euismod. 
                             Vivamus ultricies ante sed diam mollis, et mattis nisi rhoncus. Mauris 
                             accumsan hendrerit ante,.
@@ -129,7 +132,7 @@
                     </div>
                     <div class="card">
                         <h3 class="card-title">Card Shuffle</h3>
-                        <p>Duis auctor sed ligula sed sodales. Morbi mollis erat vel porttitor 
+                        <p class="description">Duis auctor sed ligula sed sodales. Morbi mollis erat vel porttitor 
                             commodo. Suspendisse ornare viverra nulla non interdum.
                         </p>     
                         <ul class="card-list">
@@ -140,7 +143,7 @@
                     </div>
                     <div class="card">
                         <h3 class="card-title">True AI</h3>
-                        <p>Careful with this one, it could wreck havoc if unleashed on the internet. Still needs
+                        <p class="description">Careful with this one, it could wreck havoc if unleashed on the internet. Still needs
                             proper testing but it could change everything.
                         </p>
                         <ul class="card-list">
@@ -152,10 +155,46 @@
                 </div>
             </div>
             <div class="announcements">
-                <h3 class="user-content-division">Announcements</h3>
+                <h3 class="content-title">Announcements</h3>
+                <div class="announcements-container">
+                    <div class="announcement-1 announcement">
+                        <h3 class="announcement-title">Final Release Date</h3>
+                        <p class="description">Donec id nisi aliquet, efficitur nulla ut, finibus justo.</p>
+                    </div>
+                    <div class="announcement-2 announcement">
+                        <h3 class="announcement-title">Patch notes</h3>
+                        <p class="description">You'll like some of these. You'll hate some of these. Just like life</p>
+                    </div>
+                    <div class="announcement-3 announcement">
+                        <h3 class="announcement-title">Now Hiring</h3>
+                        <p class="description">Mauris turpis tellus, pellentesque sed nunc vitae, congue fermentum dolor. Quisque tincidunt urna vel facilisis dictum. Pellentesque dapibus, est nec volutpat elementum, leo nisl auctor urna, quis vehicula elit augue vitae leo. </p>
+                    </div>
+                </div>
             </div>
             <div class="trending">
-                <h3 class="user-content-division">Tending</h3>
+                <h3 class="content-title">Trending</h3>
+                <ul class="trending-list">
+                    <li class="trending-item">
+                        <img src="assets/profile-images/chick.jpg" alt="profile image">
+                        <p>@twitie</p>
+                        <p class="description">Chicken or Egg</p>
+                    </li>
+                    <li class="trending-item">
+                        <img src="assets/profile-images/chameleon.jpg" alt="profile image">
+                        <p>@random</p>
+                        <p class="description">Card Shuffle</p>
+                    </li>
+                    <li class="trending-item">
+                        <img src="assets/profile-images/squirrel.jpg" alt="profile image">
+                        <p>@merlin</p>
+                        <p class="description">Nut Finder</p>
+                    </li>
+                    <li class="trending-item">
+                        <img src="assets/profile-images/rabbit.jpg" alt="profile image">
+                        <p>@bugs</p>
+                        <p class="description">Ear Jewelry Store</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
